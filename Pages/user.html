@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Medicines at the same rate anywhere in Sheikhupura</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="file:///C:/Font%20Awesome%20Icons/css/all.css">
+</head>
+<body class="user-page">
+    
+    <!-- Header -->
+    <header class="header">
+        <!-- Website Logo -->
+        <a href="../index.html" class="logo">
+            <i class="fas fa-shopping-bag"></i>
+            My Shop
+        </a>
+
+        <!-- Navigation Bar -->
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="../index.html"><i class="fas fa-home"></i></a>
+                </li>
+                <li>
+                    <a href="./search.html"><i class="fas fa-search"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fas fa-user"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fas fa-phone-alt"></i></a>
+                </li>
+                <!-- Submenu start here -->
+                <li class="sub-li">
+                    <input type="checkbox" id="submenu_checkbox" hidden>
+                    <label for="submenu_checkbox">What we Have? <i class="fas fa-caret-left"></i></label>
+                    <ul class="submenu">
+                        <li>
+                            <a href="">Medicine</a>
+                        </li>
+                        <li>
+                            <a href="">Shampoo</a>
+                        </li>
+                        <li>
+                            <a href="">Tooth Paste</a>
+                        </li>
+                        <li>
+                            <a href="">Soap</a>
+                        </li>
+                        <li>
+                            <a href="">Cream</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Icons that are displayed on the right of header -->
+        <div class="header-icons">
+            <a href="./user.html#favourites">
+                <i class="fas fa-heart"></i>
+            </a>
+            <a href="./cart.html" class="shopping-cart">
+                <div class="cart-count">2</div>
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+            <a href="./user.html">
+                <div class="user-img">
+                    <img src="../assets/images/user.jpg">
+                </div>
+            </a>
+        </div>
+
+    </header> <!-- Header End -->
+
+    <!-- the containers that are popped up -->
+    <div class="pop-cont user-edit">
+        <div class="pop-cont-inner">
+            <h1>Edit your details</h1>
+            <form>
+                <div class="field image">
+                    <input type="file" accept="image/*" hidden id="img_input">
+                    <img src="images/user.jpg" alt="">
+                    <label for="img_input">
+                        <i class="fas fa-camera"></i>
+                    </label>
+                </div>
+                <div class="field name">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" value="Abdul Haseeb">
+                </div>
+                <div class="field email">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" value="abdul41@gmail.com">
+                </div>
+                <div class="field password">
+                    <label for="cr_pass">Current Password</label>
+                    <input type="password" id="cr_pass" value="asdgwerher">
+                </div>
+                <div class="field password">
+                    <label for="new_pass">New Password</label>
+                    <input type="password" id="new_pass" value="asdgwerher">
+                </div>
+                <div class="error-text">All Fields are required</div>
+                <div class="field submit">
+                    <button class="change_pass_btn" type="button">Change Password</button>
+                    <button type="submit">Save Changes</button>
+                </div>
+            </form>
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+
+    <!-- Main cont -->
+    <main class="main-content">
+        <div class="row">
+            <div class="user">
+                <div class="image">
+                    <img src="images/user.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="name">Abdul Haseeb</div>
+                    <div class="join_date">Joined since March 7, 2021</div>
+                </div>
+                <i class="fas fa-pen"></i>
+            </div>
+        </div>
+        <div class="row">
+            <h1 class="heading">Your Orders</h1>
+            <div class="row-in-row">
+                <div class="user-product">
+                    <div class="image">
+                        <img src="" alt="">
+                    </div>
+                    <div class="details">
+                        <h1>Panadol</h1>
+                        <div class="prd-id">PID #352</div>
+                        <div class="price">Rs 25/10 Tablets</div>
+                    </div>
+                    <div class="quantity">
+                        <h2 class="status">Pending</h2>
+                        <p>Quantity</p>
+                        <h2>50 Tablets</h2>
+                        <p>Total</p>
+                        <h2>Rs 1270</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="favourites">
+            <div class="medicine-cont">
+                <span>Favourites</span>
+                <div class="products-cont">
+                    <div class="product">
+                        <div class="image">
+                            <img src="" alt="">
+                            <div class="hover-box">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <h1>Panadol</h1>
+                            <div class="rating-cont">
+                                <i class="fas fa-star rtd"></i>
+                                <i class="fas fa-star rtd"></i>
+                                <i class="fas fa-star rtd"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="prd-id">PID #235</div>
+                            <div class="add-to-cart">
+                                <div class="price">Rs 120</div>
+                                <div class="add-icons">
+                                    <a href="">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="image">
+                            <img src="" alt="">
+                            <div class="hover-box">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <h1>Panadol</h1>
+                            <div class="rating-cont">
+                                <i class="fas fa-star rtd"></i>
+                                <i class="fas fa-star rtd"></i>
+                                <i class="fas fa-star rtd"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="prd-id">PID #235</div>
+                            <div class="add-to-cart">
+                                <div class="price">Rs 120</div>
+                                <div class="add-icons">
+                                    <a href="">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="image">
+                            <img src="" alt="">
+                            <div class="hover-box">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <h1>Panadol</h1>
+                            <div class="rating-cont">
+                                <i class="fas fa-star rtd"></i>
+                                <i class="fas fa-star rtd"></i>
+                                <i class="fas fa-star rtd"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="prd-id">PID #235</div>
+                            <div class="add-to-cart">
+                                <div class="price">Rs 120</div>
+                                <div class="add-icons">
+                                    <a href="">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-logo">
+            <div class="logo">
+                <i class="fas fa-shopping-bag"></i>
+                My Shop
+            </div>
+            <p>My Shop is an Online Shopping Store where you can buy medicines, shapmoos, etc at the same price anywhere in Islamabad</p>
+        </div>
+        <div class="product-links">
+            <h2>Our Products</h2>
+            <ul>
+                <li>
+                    <a href="">Medicine</a>
+                </li>
+                <li>
+                    <a href="">Tooth Paste</a>
+                </li>
+                <li>
+                    <a href="">Shampoo</a>
+                </li>
+                <li>
+                    <a href="">Soap</a>
+                </li>
+                <li>
+                    <a href="">Cream</a>
+                </li>
+            </ul>
+        </div>
+        <div class="more-links">
+            <h2>More Links</h2>
+            <ul>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+                <li>
+                    <a href="">Location</a>
+                </li>
+            </ul>
+        </div>
+    </footer> <!-- Footer End -->
+
+    <!-- Javascript -->
+    <script src="../assets/js/jQuery.js"></script>
+    <script src="../assets/js/index.js"></script>
+
+</body>
+</html>
